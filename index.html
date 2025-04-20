@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <a href="#home" class="logo">
+        Ilya <span>Tretyak</span>
+    </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Главная</a>
+        <a href="#services">Услуги</a>
+        <!-- <a href="#testimonials">Отзывы</a> -->
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Привет, это <span>Илья</span></h1>
+        <h3 class="text-animation">Я <span></span></h3>
+        <p>Я — <span>fullstack-разработчик</span>.
+            Создаю современные и качественные веб-приложения, которые работают быстро, безопасно и приносят
+            прибыль.
+        </p>
+        <p><span>Мой код</span> — это не просто функционал, а продуманные решения для вашего бизнеса.</p>
+
+        <div class="social-icon">
+            <a href="mailto:tretyak.ilya.work@gmail.com"><i class='bx bx-envelope'></i></a>
+            <a href="https://github.com/Ilya-Tretyak"><i class='bx bxl-github'></i></a>
+            <a href="https://t.me/Ilya_Tretyak"><i class='bx bxl-telegram'></i></a>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://t.me/Ilya_Tretyak" class="btn">Нанять</a>
+            <a href="#contact" class="btn">Контакты</a>
+        </div>
+    </div>
+
+    <div class="home-image">
+        <img src="image.jpg" alt="">
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="services-container">
+        <div class="service-box box-left">
+            <div class="service-info">
+                <h4>Разработка Backend сайта</h4>
+                <h5>Надежный backend — основа вашего проекта.</h5>
+                <p>
+                    Разрабатываю серверную часть на Python (Django). Оптимизация баз
+                    данных, интеграция платежных систем и сложная бизнес-логика — всё под
+                    контролем.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-box box-right">
+            <div class="service-info">
+                <h4>Разработка Frontend сайта</h4>
+                <h5>Интерфейсы, которые нравятся пользователям.</h5>
+                <p>
+                    Пишу чистый код, делаю адаптивную верстку и анимации. Ваш сайт будет
+                    выглядеть современно и работать на всех устройствах без тормозов.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-box box-left">
+            <div class="service-info">
+                <h4>Создание telegram ботов</h4>
+                <h5>Автоматизируем рутину с Telegram-ботами.</h5>
+                <p>
+                    Боты для поддержки клиентов, парсинга данных, автоматических уведомлений и даже мини-игр. Готовое
+                    решение за 3-7 дней с подключением к вашей CRM или API.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text"
+                       placeholder="Имя">
+                <input type="email"
+                       placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number"
+                       placeholder="Номер телефона">
+                <input type="text"
+                       placeholder="Тема услуги">
+            </div>
+        </div>
+
+        <div class="input-group-2">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Опишите вашу задачу"></textarea>
+            <input type="submit" value="Отправить" class="btn">
+        </div>
+    </form>
+</section>
+
+<footer>
+    <div class="social">
+        <a href="mailto:tretyak.ilya.work@gmail.com"><i class='bx bx-envelope'></i></a>
+        <a href="https://github.com/Ilya-Tretyak"><i class='bx bxl-github'></i></a>
+        <a href="https://t.me/Ilya_Tretyak"><i class='bx bxl-telegram'></i></a>
+    </div>
+
+    <ul>
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#services">Услуги</a>
+        </li>
+        <li>
+            <a href="#home">Обо мне</a>
+        </li>
+        <li>
+            <a href="#contact">Контакты</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        © Ilya Tretyak | All right reserved
+    </p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
